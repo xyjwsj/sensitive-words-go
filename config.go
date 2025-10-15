@@ -13,6 +13,9 @@ type Config struct {
 
 	// WhiteList contains words that should not be treated as sensitive
 	WhiteList map[string]bool
+
+	// SensitiveFiles
+	SensitiveDirs []string
 }
 
 // NewConfig creates a new configuration with default values
@@ -29,4 +32,3 @@ func NewConfig() *Config {
 func DefaultConfig() *Config {
 	return NewConfig()
 }
-

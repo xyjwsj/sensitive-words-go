@@ -42,7 +42,8 @@ fmt.Println(replaced) // 这是一段包含***的内容
 config := sensitive_word.NewConfig() 
 config.ReplaceChar = '#' 
 config.IgnoreCase = true
-sw := sensitive_word.NewSensitiveWordWithConfig(config) sw.AddWhiteWord("正常词汇")
+sw := sensitive_word.NewSensitiveWordWithConfig(config) 
+sw.AddWhiteWord("正常词汇")
 if sw.Contains(text) { 
 	// Handle sensitive content 
 }
